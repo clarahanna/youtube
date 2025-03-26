@@ -1,0 +1,57 @@
+.videoContentContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Uniform size, responsive */
+  gap: 20px; /* Space between video cards */
+  padding: 20px;
+  margin: 70px 50px 0; /* Center and adjust margins */
+  max-width: 1200px; /* Set a max width for consistency */
+  box-sizing: border-box; /* Ensure padding is included in overall width */
+}
+
+.videoCard {
+  background: #fff;
+  border-radius: 12px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a clean look */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer; /* Add a hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videoCard:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.videoThumbnail {
+  width: 100%; /* Full width of the card */
+  aspect-ratio: 16 / 9; /* Maintain YouTube's thumbnail aspect ratio */
+  border-radius: 8px; /* Smooth corners for the thumbnail */
+  object-fit: cover; /* Ensure the thumbnail fills its container */
+}
+
+.videoDetails {
+  margin-top: 8px;
+  color: #333;
+  text-align: left; /* Align text to the left */
+}
+
+.videoTitle {
+  margin: 5px 0;
+  font-size: 16px; /* Clear and readable size */
+  font-weight: bold; /* Make title stand out */
+  color: #000; /* Black text for clarity */
+}
+
+.videoChannel {
+  font-size: 14px;
+  color: #555; /* Softer color for the channel name */
+  margin: 3px 0;
+}
+
+.videoViews {
+  font-size: 12px;
+  color: #777; /* Muted color for views */
+}

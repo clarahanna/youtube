@@ -1,0 +1,121 @@
+.container {
+  margin-top: 0px;
+  width: 100%; /* Same width as the video player */
+  padding: 10px;
+}
+
+/* Line 1: Video Title */
+.videoTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px; /* Space below the title */
+  margin-top: 0px;
+}
+
+/* Line 2: Main Section */
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Space below the main section */
+}
+
+/* Left Section: Channel Info */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.channelInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.subscribeContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between subscriber count and button */
+}
+
+.subscriberCount {
+  font-size: 14px;
+  color: #666;
+}
+
+.subscribeButton {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.subscribeButton:hover {
+  background-color: #a00000;
+}
+
+.subscribed {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+/* Right Section: Action Buttons */
+.rightSection {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+}
+
+.actionButton {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actionButton:hover {
+  background-color: #e1e1e1;
+}
+
+.containerDescription {
+  width: 95%; /* Same width as the video player */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Space above the subscribe section */
+}
+/*  Views */
+.views {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/*  Description */
+.description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
