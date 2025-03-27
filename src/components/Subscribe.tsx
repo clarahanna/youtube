@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
 import styles from "../styles/Subscribe.module.css";
 import { SubscribeProps } from "../types/SubscribeTypes";
+import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
+import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 
-const AuthorSubscribe: React.FC<SubscribeProps> = ({
+const Subscribe: React.FC<SubscribeProps> = ({
   title,
   channel,
   avatarUrl,
@@ -32,9 +36,7 @@ const AuthorSubscribe: React.FC<SubscribeProps> = ({
           <div className={styles.channelInfo}>
             <p className={styles.channelName}>{channel}</p>
             <div className={styles.subscribeContainer}>
-              <span className={styles.subscriberCount}>
-                {subscribers} subscribers
-              </span>
+              <span className={styles.subscriberCount}>{subscribers}</span>
               <button
                 onClick={handleSubscribe}
                 className={`${styles.subscribeButton} ${
@@ -49,10 +51,18 @@ const AuthorSubscribe: React.FC<SubscribeProps> = ({
 
         {/* Right Section: Action Buttons */}
         <div className={styles.rightSection}>
-          <button className={styles.actionButton}>👍 {likes}</button>
-          <button className={styles.actionButton}>👎 {dislikes}</button>
-          <button className={styles.actionButton}>🔗 Share</button>
-          <button className={styles.actionButton}>📥 Download</button>
+          <button className={styles.actionButton}>
+            <ThumbUpOutlinedIcon /> {likes}
+          </button>
+          <button className={styles.actionButton}>
+            <ThumbDownOutlinedIcon /> {dislikes}
+          </button>
+          <button className={styles.actionButton}>
+            <ReplyOutlinedIcon /> Share
+          </button>
+          <button className={styles.actionButton}>
+            <DownloadOutlinedIcon /> Download
+          </button>
         </div>
       </div>
 
@@ -65,4 +75,4 @@ const AuthorSubscribe: React.FC<SubscribeProps> = ({
   );
 };
 
-export default AuthorSubscribe;
+export default Subscribe;

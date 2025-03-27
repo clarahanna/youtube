@@ -1,12 +1,12 @@
 .container {
   margin-top: 0px;
-  width: 100%; /* Same width as the video player */
+  width: 99%; /* Same width as the video player */
   padding: 10px;
 }
 
 /* Line 1: Video Title */
 .videoTitle {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
   margin-bottom: 0px; /* Space below the title */
@@ -41,7 +41,7 @@
 }
 
 .channelName {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #333;
   margin-bottom: 0px;
@@ -50,7 +50,10 @@
 .subscribeContainer {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between subscriber count and button */
+  gap: 20px; /* Space between subscriber count and button */
+  /* margin-left: auto; */
+  position: relative;
+  top:-5px;
 }
 
 .subscriberCount {
@@ -59,13 +62,16 @@
 }
 
 .subscribeButton {
-  background-color: #cc0000;
+  background-color: #000;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 8px 12px;
   cursor: pointer;
   font-size: 14px;
+  position: relative;
+  top:-5px;
+  
 }
 
 .subscribeButton:hover {
@@ -80,7 +86,9 @@
 /* Right Section: Action Buttons */
 .rightSection {
   display: flex;
+  align-items: center;
   gap: 10px; /* Space between action buttons */
+  justify-content: flex-end;
 }
 
 .actionButton {
@@ -91,15 +99,21 @@
   padding: 8px 12px;
   cursor: pointer;
   font-size: 14px;
+  display: flex; /* Ensures alignment of icons and text */
+  align-items: center; /* Vertically aligns icons and text */
+  justify-content: center; /* Centers content inside the button */
+  gap: 5px; /* Adds space between the icon and text */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 .actionButton:hover {
   background-color: #e1e1e1;
+  
 }
 
 .containerDescription {
-  width: 95%; /* Same width as the video player */
-  padding: 15px;
+  width: 96.5%; /* Same width as the video player */
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -110,12 +124,13 @@
 .views {
   font-size: 14px;
   color: #666;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 0px;
 }
 
 /*  Description */
 .description {
   font-size: 14px;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.8;
 }
